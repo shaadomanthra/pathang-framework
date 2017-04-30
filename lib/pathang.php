@@ -37,7 +37,7 @@ class pathang extends Error
 				
 		
 		//function to load the classes automatically
-		private function _autoload($class)
+		public static function _autoload($class)
 		{
 			$paths = array('lib','app'.DS.'controllers','app'.DS.'models');
 			foreach($paths as $path)
